@@ -12,7 +12,7 @@ body {
 
  /*Index page CSS Style Rules*/
 .art-banner {
-  background-color: rgb(0, 80, 112);
+  background-color: rgb(105, 130, 158);
   height: 100vh;
   display: grid;
   grid-template-columns: 20px 1fr 1fr 1fr 20px;
@@ -22,30 +22,33 @@ body {
 
 .art-banner-bg {
   opacity: 0.15;
-  background: url("./images/night.jpg")
-    center center no-repeat;
+  background: url("./images/night.jpg");
+  background-size: cover;
   grid-column: 1/-1;
   grid-row: 1/-1;
 }
 
 .banner-text {
-  color: #fff;
+  font-size: 30px;
+color: rgb(96, 120, 142);
+-webkit-text-stroke-width: .04em;
+-webkit-text-stroke-color: rgb(23, 17, 82);
   font-size: 8vw;
   font-weight: bold;
   grid-column: 2 / span 2;
   grid-row: 3;
   align-self: center;
-  justify-self: center;
+  justify-self: right;
   
 }
 
 .badge {
   display: grid;
-  grid-coloumn: 4;
+  grid-column: 4;
   grid-row: 3;
   align-self: center;
   justify-self: center;
-  background-color: rgb(255, 41, 123);
+  background-color: rgb(23, 17, 82);
   color: #fff;
   font-size: 2.5vw;
   font-weight: bold;
@@ -56,25 +59,27 @@ body {
 }
 
 .badge p {
+  font-size: medium;
+  font-style: italic;
   margin: auto;
 }
 
 .art-banner::before {
   content: "";
   opacity: 0.85;
-  border-top: 5px solid rgb(255, 41, 123);
-  border-right: 5px solid rgb(255, 41, 123);
+  border-top: 5px solid rgb(23, 17, 82);
+  border-right: 5px solid rgb(23, 17, 82);
   grid-column: 4;
-  grid-row: 2 / span 3;
+  grid-row: 2 / span 2;
 }
 
 .art-banner::after {
   content: "";
   opacity: 0.85;
-  border-bottom: 5px solid rgb(255, 41, 123);
-  border-left: 5px solid rgb(255, 41, 123);
+  border-bottom: 5px solid rgb(23, 17, 82);
+  border-left: 5px solid rgb(23, 17, 82);
   grid-column: 2;
-  grid-row: 4 / span 2;
+  grid-row: 4;
 }
 
 
@@ -260,7 +265,7 @@ background-color: rgb(204, 247, 230);
   overflow: auto;
 }
 
- /*Seventh Example*/
+ /*Seventh Example
 .art-banner {
   background-color: rgb(0, 80, 112);
   height: 100vh;
@@ -326,3 +331,5 @@ background-color: rgb(204, 247, 230);
   grid-column: 2;
   grid-row: 4 / span 2;
 }
+
+*/
