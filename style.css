@@ -9,6 +9,86 @@ body {
   font-size: 1rem;
 }
 
+
+ /*Index page CSS Style Rules*/
+.art-banner {
+  background-color: rgb(0, 80, 112);
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 20px 1fr 1fr 1fr 20px;
+  grid-template-rows: 20px 1fr 1fr 1fr 20px;
+
+}
+
+.art-banner-bg {
+  opacity: 0.15;
+  background: url("./images/night.jpg")
+    center center no-repeat;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+}
+
+.banner-text {
+  color: #fff;
+  font-size: 8vw;
+  font-weight: bold;
+  grid-column: 2 / span 2;
+  grid-row: 3;
+  align-self: center;
+  justify-self: center;
+  
+}
+
+.badge {
+  display: grid;
+  grid-coloumn: 4;
+  grid-row: 3;
+  align-self: center;
+  justify-self: center;
+  background-color: rgb(255, 41, 123);
+  color: #fff;
+  font-size: 2.5vw;
+  font-weight: bold;
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  transform: rotate(15deg);
+}
+
+.badge p {
+  margin: auto;
+}
+
+.art-banner::before {
+  content: "";
+  opacity: 0.85;
+  border-top: 5px solid rgb(255, 41, 123);
+  border-right: 5px solid rgb(255, 41, 123);
+  grid-column: 4;
+  grid-row: 2 / span 3;
+}
+
+.art-banner::after {
+  content: "";
+  opacity: 0.85;
+  border-bottom: 5px solid rgb(255, 41, 123);
+  border-left: 5px solid rgb(255, 41, 123);
+  grid-column: 2;
+  grid-row: 4 / span 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .click {
   padding: 20px;
   text-align: center;
